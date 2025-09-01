@@ -1,7 +1,7 @@
 <?php
 
-$domain = 'http://localhost/travel/amanda-rafania-sharifah.web.id/';
-// $domain = 'https://amanda-rafania-sharifah.web.id/';
+// $domain = 'http://localhost/travel/amanda-rafania-sharifah.web.id/';
+$domain = 'https://amanda-rafania-sharifah.web.id/';
 $brand = 'Amanda Rafania Sharifah';
 $logo = 'src/img/logo.jpg';
 $logoPanjang = 'src/img/logo.jpg';
@@ -11,9 +11,7 @@ $telp = '0852-5123-8787';
 // $telp2 = '0857-9190-4615';
 $alamat = 'Jln Pertanian gang Andi mulyadi';
 
-$iframe = 'https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d31650.564929030832!2d109.323569!3d-7.429728!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnNDcuMCJTIDEwOcKwMTknMzQuMSJF!5e0!3m2!1sid!2sus!4v1751626169160!5m2!1sid!2sus';
-
-
+$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.712252057068!2d117.5166939158166!3d0.48042447508192637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a35ec535e41a5%3A0x5f7522ab63f188f0!2sJl.%20Pertanian%2C%20Sangatta%20Sel.%2C%20Kec.%20Sangatta%20Sel.%2C%20Kabupaten%20Kutai%20Timur%2C%20Kalimantan%20Timur%2075683!5e0!3m2!1sid!2sid!4v1756735469478!5m2!1sid!2sid';
 
 function res_telp($telp)
 {
