@@ -9,9 +9,10 @@ $title = "Travel Sanggata Terbaik dari " . $brand;
 $desc = "Jasa Travel Sanggata Hari Ini dengan pelayanan berkualitas dan tujuan seluruh Kalimantan | " . $brand;
 $telp = '0852-5123-8787';
 // $telp2 = '0857-9190-4615';
-$alamat = 'Jln Pertanian gang Andi mulyadi';
+$alamat = 'FGFQ+Q46 Sangatta Sel., Kabupaten Kutai Timur, Kalimantan Timur';
 
-$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.712252057068!2d117.5166939158166!3d0.48042447508192637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a35ec535e41a5%3A0x5f7522ab63f188f0!2sJl.%20Pertanian%2C%20Sangatta%20Sel.%2C%20Kec.%20Sangatta%20Sel.%2C%20Kabupaten%20Kutai%20Timur%2C%20Kalimantan%20Timur%2075683!5e0!3m2!1sid!2sid!4v1756735469478!5m2!1sid!2sid';
+
+$iframe = 'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.681555336334!2d117.53519287496475!3d0.4744055995209502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMMKwMjgnMjcuOSJOIDExN8KwMzInMTYuMCJF!5e0!3m2!1sid!2sid!4v1756787996355!5m2!1sid!2sid';
 
 function res_telp($telp)
 {
@@ -63,11 +64,6 @@ $rute = [
   "Travel Sangatta Berau",
   "Travel Sangatta Tanjung Selor",
 
-  "Travel Sangatta Banjarmasin",
-  "Travel Sangatta Pontianak",
-  "Travel Sangatta Penajam",
-  "Travel Sangatta Sampit",
-
   // PP
 
   "Travel Bontang Sangatta",
@@ -82,29 +78,24 @@ $rute = [
   "Travel Wahau Sangatta",
   "Travel Berau Sangatta",
   "Travel Tanjung Sangatta Selor",
-
-  "Travel Banjarmasin Sangatta",
-  "Travel Pontianak Sangatta",
-  "Travel Penajam Sangatta",
-  "Travel Sampit Sangatta",
 ];
 
 $kota = [
   [
-    'Banyumas',
-    'banyumas.jpg',
+    'Sangatta',
+    'sangatta.jpg',
   ],
   [
-    'Jakarta',
-    'jakarta.jpg',
+    'Samarinda',
+    'samarinda.jpg',
   ],
   [
-    'Depok',
-    'depok.jpg',
+    'Bontang',
+    'bontang.jpg',
   ],
   [
-    'Cikarang',
-    'cikarang.jpg',
+    'Balikpapan',
+    'balikpapan.jpg',
   ],
 ];
 
@@ -476,6 +467,7 @@ $galeri = [
                   src="./src/img/rute.jpg"
                   width="100%"
                   height="100%"
+                  loading="lazy"
                   alt="<?= 'rute ' . $item ?>"
                   class="" />
                 <div class="">
@@ -497,13 +489,13 @@ $galeri = [
     <!-- Tentang Kami -->
     <section id="tentang-kami" class="bg-gradient-to-tr from-primary to-blue-500 py-20">
       <div class="container">
-        <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-full md:col-span-6">
-            <div class="w-full max-w-[400px]">
-              <img loading="lazy" src="<?= $logo ?>" class="w-full rounded-lg" alt="tentang Panda 88 Trans">
+        <div class="grid grid-cols-1 md:!grid-cols-2 gap-8">
+          <div class="col-span-full md:!col-span-1  ">
+            <div class="w-full md:max-w-[400px]">
+              <img loading="lazy" src="<?= $domain ?>src/img/ars.jpg" class="w-full rounded-lg" alt="tentang <?= $title ?>">
             </div>
           </div>
-          <div class="col-span-full md:col-span-6">
+          <div class="col-span-full md:!col-span-1  ">
             <div class="text inner-container">
               <h2 class="line-h2 left-12 text-slate-50 before:!bg-blue-300 after:!bg-blue-300">Tentang Kami</h2>
               <p class="desc !text-slate-300 !mb-5">
@@ -517,11 +509,11 @@ $galeri = [
                 <li>Wisata</li>
               </ul>
             </div>
-            <div class="grid grid-cols-2">
+            <!-- <div class="grid grid-cols-2">
               <div class="col-span-full">
                 <p></p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -547,6 +539,7 @@ $galeri = [
                   <img
                     src="<?= $domain . 'src/img/place/' . $item[1] ?>"
                     class="group-hover:scale-125"
+                    loading="lazy"
                     alt="<?= $item[0] ?>" />
                   <div class="">
                     <h3><?= $item[0] ?></h3>
@@ -680,6 +673,7 @@ $galeri = [
                 <img
                   width="100"
                   height="100"
+                  loading="lazy"
                   src="<?= $domain . '/src/img/galeri/' . $item ?>"
                   class="<?php
                           if ($key == 0 || $key == 3) {
